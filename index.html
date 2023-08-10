@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 class="main header"><center>Student Enrollment Form</center></h1>
+    <form>
+        <img src="C:\Users\91861\Desktop\student-form\assets"/>
+        <label for="User-firstname">First Name:</label>
+        <input type="text"placeholder="First Name"id="User-firstname"name="User-firstname"required/>
+        <br><br>
+        <label for="User-lastname">Last Name</label>
+        <input type="text"placeholder="Last Name"id="User-lastname"name="User-lastname"required/>
+        <br><br>
+        <label for="User-number">RegisterNumber:</label>
+        <input type="text"placeholder="RegisterNumber"id="User-number"name="User-number"required/>
+        <br><br>
+        <label for="User-number">MobileNumber:</label>
+        <input type="text"placeholder="MobileNumber"pattern="[6789][0-9]{9}"id="User-number"name="User-number"required/>
+        <br><br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+        <label for="email-address" class="standard-label">Email<span class="required">*</span>
+        <input class="standard-input" id="email-address" type="email" placeholder="Your email address..." required>
+        </label>
+        <br><br>
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+          <option value="">Select Department</option>
+          <option value="Engineering">CSE</option>
+          <option value="Engineering">ECE</option>
+          <option value="Engineering">EEE</option>
+          <option value="Engineering">ENI</option>
+          <option value="Engineering">BIOTECH</option>
+          <option value="Engineering">ENI</option>
+          <option value="Engineering">AIML/AIDS</option>
+        </select> 
+        <br><br>
+        <label for="year">Which Year:</label>
+        <select id="year" name="year">
+            <option value="FIRST">FIRST</option>
+            <option value="SECOND">SECOND</option>
+            <option value="THIRD">THIRD</option>
+            <option value="FOURTH">FOURTH</option>
+        </select><br><br> 
+        <label for="lk">Languages Know:</label>
+            <input type="checkbox" id="lk" name="lk">C
+            <input type="checkbox" id="lk" name="lk">C++
+            <input type="checkbox" id="lk" name="lk">PYTHON
+            <input type="checkbox" id="lk" name="lk">JAVA
+            <br><br>
+        <label for="avsl">Available Slots:</label>
+        <select id="avsl" name="avsl">
+            <option value="ten">10AM</option>
+            <option value="two">2PM</option>
+             <option value="two">5PM</option>
+        </select>
+        <br><br>
+        <label for="resume">Upload your Resume:</label><br><br>
+        <input type="file" id="myFile" name="myfile" accept=".pdf"  required="required">
+        <br><br>
+        <center><button value="button">ENROLL</button></center>
+        </fieldset>
+    </form>
 </body>
 </html>
